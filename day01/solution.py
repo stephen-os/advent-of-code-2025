@@ -1,6 +1,8 @@
 ﻿# Advent of Code 2025 - Day 1
+lines = []
 
-lines = open('input.txt').read().strip().split('\n')
+with open('input.txt') as file: 
+    lines = file.read().strip().split('\n')
 
 # Part 1
 def part1():
@@ -59,5 +61,3 @@ def part2():
 if __name__ == '__main__':
     part1()
     part2()
-
-lines.close()
